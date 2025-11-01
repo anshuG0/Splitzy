@@ -34,13 +34,6 @@
         <module>notification-service</module>
         <module>split-request-service</module>
         <module>settlement-service</module>
-        <module>user-service</module>
-        <module>common-lib</module>
-        <module>auth-service</module>
-        <module>expense-service</module>
-        <module>notification-service</module>
-        <module>settlement-service</module>
-        <module>split-request-service</module>
     </modules>
 
     <!-- =============================================================== -->
@@ -162,6 +155,25 @@
         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-core</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis-reactive</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.projectreactor</groupId>
+            <artifactId>reactor-test</artifactId>
             <scope>test</scope>
         </dependency>
     </dependencies>
