@@ -3,6 +3,7 @@ package org.splitzy.expense.controller;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import java.time.LocalDate;
 import org.splitzy.common.dto.ApiResponse;
 import org.splitzy.common.dto.PageResponse;
 import org.splitzy.expense.dto.ExpenseSearchCriteria;
@@ -15,8 +16,6 @@ import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.time.LocalDate;
 
 @Slf4j
 @RestController

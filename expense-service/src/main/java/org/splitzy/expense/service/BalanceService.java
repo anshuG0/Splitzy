@@ -3,7 +3,7 @@ package org.splitzy.expense.service;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.splitzy.common.exception.ResourceNotFoundException;
-import org.splitzy.expense.dto.BalanceResponse;
+import org.splitzy.expense.dto.response.BalanceResponse;
 import org.splitzy.expense.entity.UserBalance;
 import org.splitzy.expense.repository.UserBalanceRepository;
 import org.springframework.data.domain.Page;
